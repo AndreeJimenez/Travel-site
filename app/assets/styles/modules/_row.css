@@ -1,0 +1,45 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin atMedium {
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    flex-direction: row;
+  }
+
+  &__column {
+    flex-direction: column;
+    justify-content: space-around;
+
+    @mixin atMedium {
+      margin: 0 2rem;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      &--medium-4 {
+        width: 33%;
+      }
+
+      &--medium-4--larger {
+        width: 37%;
+      }
+
+      &--medium-8 {
+        width: 66%;
+      }
+
+      &--medium-8-smaller {
+        width: 63%;
+      }
+    }
+  }
+}
