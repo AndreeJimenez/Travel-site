@@ -1,12 +1,13 @@
 .testimonial {
-    background-color: rgba(255,255,255, .8);
+    background-color: rgba(255, 255, 255, .8);
     padding: 0 1.125rem 1px 1.125rem;
     margin-bottom: 96px;
 
-    @mixin atMedium {
+    @mixin atLarge {
         margin-bottom: 0;
         padding: 0 1.875rem 1px 1.875rem;
     }
+
 
     &--last {
         margin-bottom: 0;
@@ -20,7 +21,7 @@
         margin: 0 auto -80px auto;
         position: relative;
         top: -80px;
-        border: 6px solid rgba(255,255,255, .8);
+        border: 6px solid rgba(255, 255, 255, .8);
     }
 
     &__title {
