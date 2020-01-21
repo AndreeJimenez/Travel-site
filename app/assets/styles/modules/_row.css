@@ -7,6 +7,10 @@
     margin-bottom: 1rem;
   }
 
+  &--t-padding {
+    padding-top: 80px;
+  }
+
   @mixin atMedium {
     &__b-margin-until-medium {
       margin-bottom: 0;
@@ -20,12 +24,20 @@
       margin-right: -6.25rem;
     }
 
+    &--gutters-small {
+      margin-right: -2.8125rem;
+    }
+
     &--gutters > div {
       padding-right: 4.125rem;;
     }
 
     &--gutters-large > div {
       padding-right: 6.25rem;
+    }
+
+    &--gutters-small > div {
+      padding-right: 2.8125rem;
     }
 
     flex-direction: row;
@@ -51,4 +63,11 @@
       width: 63%;
     }
   }
+
+ 
+  /* Begin Equal Height Rules */
+  &--equal-height-at-medium > div{
+    display: flex;
+  }
+
 }
