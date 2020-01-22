@@ -3,15 +3,15 @@
     padding: 0 1.125rem 1px 1.125rem;
     margin-bottom: 96px;
 
-    @mixin atLarge {
+    &--last {
+        margin-bottom: 0;
+    }
+
+    @mixin atMedium {
         margin-bottom: 0;
         padding: 0 1.875rem 1px 1.875rem;
     }
 
-
-    &--last {
-        margin-bottom: 0;
-    }
 
     &__photo {
         border-radius: 50%;
