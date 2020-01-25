@@ -1,0 +1,21 @@
+.primary-nav {
+    &--pull-right > ul{
+        display: flex;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        padding-right: 1.25rem;
+    }
+
+    a{
+        color: #ffffff;
+        font-weight: 300;
+        text-decoration: none;
+    }
+}
