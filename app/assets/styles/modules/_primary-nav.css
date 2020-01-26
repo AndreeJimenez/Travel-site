@@ -1,4 +1,10 @@
 .primary-nav {
+    padding-top: 10px;
+
+    @mixin atMedium {
+        padding-top: 0;
+    }
+
     &--pull-right > ul{
         display: flex;
     }
@@ -10,12 +16,34 @@
 
     li {
         list-style: none;
-        padding-right: 1.25rem;
+        padding-right: .5rem;
+
+        @mixin atMedium {
+            padding-right: 1.25rem;
+        }
+    }
+
+    li:last-child {
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-right: 1.25rem;
+        }
     }
 
     a{
         color: #ffffff;
         font-weight: 300;
         text-decoration: none;
+        display: block;
+        padding: 5px 8px;
+        font-size: .8rem;
+        background-color: rgba($mainBlue, .5);
+
+        @mixin atMedium {
+            font-size: 1rem;
+            padding: 12px 0;
+            background-color: transparent;
+        }
     }
 }
