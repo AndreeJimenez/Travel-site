@@ -41,7 +41,7 @@ class StickyHeader {
     calcSection(element) {
         if (window.scrollY + this.browserHeight > element.offsetTop && window.scrollY < element.offsetTop + element.offsetHeight) {
             let scrollPercent = (element.getBoundingClientRect().top / this.browserHeight) * 100;
-            if ((scrollPercent > 20 && this.scrollDirection == 'down') || (scrollPercent < 33 && this.scrollDirection == 'up')) {
+            if (scrollPercent < 50 && scrollPercent > -0.1 && this.scrollDirection =='down' || scrollPercent < 50 && this.scrollDirection == 'up') {
                 let matchingLink = element.getAttribute("data-matching-link");
                 document.querySelectorAll(`.primary-nav a:not(${matchingLink})`).forEach(element => element.classList.remove("is-current-link"));
                 document.querySelector(matchingLink).classList.add("is-current-link");
