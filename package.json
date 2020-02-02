@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AndreeJimenez/travel-site#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "lazysizes": "^5.2.0",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1"

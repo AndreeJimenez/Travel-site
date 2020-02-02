@@ -1,33 +1,33 @@
 class Modal {
-    constructor() {
-        this.injectHTML();
-        this.modal = document.querySelector(".modal");
-        this.closeIcon = document.querySelector(".modal__close");
-        this.events();
-    }
+  constructor() {
+    this.injectHTML();
+    this.modal = document.querySelector(".modal");
+    this.closeIcon = document.querySelector(".modal__close");
+    this.events();
+  }
 
-    events(){
-        this.closeIcon.addEventListener("click", () => this.closeTheModal());
-        document.addEventListener("keyup", e => this.keyPressHandler(e));
-    }
+  events() {
+    this.closeIcon.addEventListener("click", () => this.closeTheModal());
+    document.addEventListener("keyup", e => this.keyPressHandler(e));
+  }
 
-    keyPressHandler(e) {
-        console.log(e.keyCode);
-        if (e.keyCode == 27) {
-            this.closeTheModal();
-        }
+  keyPressHandler(e) {
+    console.log(e.keyCode);
+    if (e.keyCode == 27) {
+      this.closeTheModal();
     }
+  }
 
-    openTheModal(e) {
-        this.modal.classList.add("modal--is-visible");
-    }
+  openTheModal(e) {
+    this.modal.classList.add("modal--is-visible");
+  }
 
-    closeTheModal() {
-        this.modal.classList.remove("modal--is-visible");
-    }
+  closeTheModal() {
+    this.modal.classList.remove("modal--is-visible");
+  }
 
-    injectHTML() {
-        document.body.insertAdjacentHTML('beforeend', `
+  injectHTML() {
+    document.body.insertAdjacentHTML('beforeend', `
         <div class="modal">
         <div class="modal__inner">
           <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" alt="Mail Icon"> Get in <strong>Touch</strong></h2>
@@ -45,7 +45,7 @@ class Modal {
         <div class="modal__close">X</div>
       </div>
         `)
-    }
+  }
 }
 
 
