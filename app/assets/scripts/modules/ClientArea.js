@@ -2,11 +2,11 @@ import Axios from 'axios'
 
 class ClientArea {
     constructor() {
-        this.injectHtml()
-        this.form = document.querySelector("client-area__form")
-        this.field = document.querySelector("client-area__input")
-        this.contentArea = document.querySelector("client-area__content-area")
-        this.events()
+        this.injectHtml();
+        this.form = document.querySelector(".client-area__form");
+        this.field = document.querySelector(".client-area__input");
+        this.contentArea = document.querySelector(".client-area__content-area");
+        this.events();
     }
 
     events() {
@@ -34,9 +34,9 @@ class ClientArea {
         <div class="client-area">
             <div class="wrapper wrapper--medium">
                 <h2 class="section-title section-title--blue">Secret Client Area</h2>
-                <form class="client-area__form" action="">
+                <form class="client-area__form">
                     <input class="client-area__input" type="text" placeholder="Enter the secret phrase">
-                    <button class="btn btn--orange">Submit</button>
+                    <button class="btn btn--Orange">Submit</button>
                 </form>
                 <div class="client-area__content-area"></div>
             </div>
