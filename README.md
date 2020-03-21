@@ -1,4 +1,4 @@
-# travel-site
+# Travel-site
 <h3> Technologies Used </h3>
 
 * JavaScript
@@ -18,4 +18,4 @@ This is a FrontEnd Personal Project based on
 <hr>
 Deployed Site URL 
 <br>
-https://andreejimenez.github.io/travel-site/ 
+https://andreejimenez.github.io/Travel-site/ 
