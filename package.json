@@ -21,7 +21,7 @@
   "homepage": "https://github.com/AndreeJimenez/travel-site#readme",
   "dependencies": {
     "lazysizes": "^5.2.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
